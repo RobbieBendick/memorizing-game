@@ -5,16 +5,14 @@ body {
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-size: clamp(1.55rem, 5vw, 3rem);
   margin:  5%;
   color: #FEF2BF;
 }
 
 .container {
   display: block;
-  width: 50%;
-  margin: auto;
-
+  width: 100%;
 }
 
 .btn {
@@ -50,4 +48,26 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+@media only screen and (max-width: 800px) {
+  .btn {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 541px) {
+  .btn {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+
+@media only screen and (max-width: 300px) {
+  .btn {
+    height: 50px;
+    width: 50px;
+  }
 }
